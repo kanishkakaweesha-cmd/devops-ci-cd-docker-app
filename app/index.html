@@ -1,10 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>DevOps CI/CD Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Page - Modern Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Hello DevOps 🚀</h1>
-  <p>Built by Chika - Real DevOps Project</p>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 13h2v8H3zm4-8h2v13H7zm4-2h2v15h-2zm4 4h2v11h-2zm4-2h2v13h-2z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Graph Page</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://www.google.com/search" target="_blank" rel="noopener" title="Search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Data Analytics <span class="gradient-text">Made Simple</span></h1>
+                <p class="hero-subtitle">Transform your raw data into actionable insights with our powerful analytics platform. Make better decisions with real-time visualization and predictive analytics.</p>
+                <div class="hero-buttons">
+                    <a href="#dashboard" class="cta-button">Get Started</a>
+                    <a href="#analytics" class="cta-button-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chart-container">
+                    <svg class="animated-chart" viewBox="0 0 200 120">
+                        <polyline class="line-chart" points="10,80 30,60 50,70 70,40 90,50 110,30 130,45 150,20 170,35 190,15" fill="none" stroke="url(#gradient)" stroke-width="3"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <div class="section-header">
+                <h2>Real-Time Dashboard</h2>
+                <p>Monitor your key metrics at a glance</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M2 12h20"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Total Revenue</h3>
+                        <p class="stat-value">$2.4M</p>
+                        <span class="stat-change positive">+12.5%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Active Users</h3>
+                        <p class="stat-value">12,543</p>
+                        <span class="stat-change positive">+8.2%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Conversions</h3>
+                        <p class="stat-value">1,284</p>
+                        <span class="stat-change positive">+23.1%</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                        </svg>
+                    </div>
+                    <div class="stat-content">
+                        <h3>Growth Rate</h3>
+                        <p class="stat-value">45.8%</p>
+                        <span class="stat-change positive">+5.3%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Advanced Analytics</h2>
+                <p>Dive deep into your data with powerful visualization tools</p>
+            </div>
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>Performance Trends</h3>
+                    <div class="chart-placeholder">
+                        <svg viewBox="0 0 300 200">
+                            <polyline points="20,150 50,120 80,130 110,90 140,100 170,70 200,85 230,60 260,75 290,50" 
+                                fill="none" stroke="#667eea" stroke-width="3"/>
+                            <polyline points="20,180 50,160 80,170 110,140 140,150 170,130 200,145 230,120 260,135 290,115" 
+                                fill="none" stroke="#764ba2" stroke-width="3" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>User Distribution</h3>
+                    <div class="chart-placeholder">
+                        <svg viewBox="0 0 300 200">
+                            <circle cx="150" cy="100" r="60" fill="none" stroke="#667eea" stroke-width="20" 
+                                stroke-dasharray="188.4 376.8" transform="rotate(-90 150 100)"/>
+                            <circle cx="150" cy="100" r="60" fill="none" stroke="#764ba2" stroke-width="20" 
+                                stroke-dasharray="94.2 376.8" stroke-dashoffset="-188.4" transform="rotate(-90 150 100)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <h3>Revenue Growth</h3>
+                    <div class="chart-placeholder">
+                        <svg viewBox="0 0 300 200">
+                            <rect x="30" y="100" width="30" height="80" fill="#667eea" rx="5"/>
+                            <rect x="80" y="80" width="30" height="100" fill="#667eea" rx="5"/>
+                            <rect x="130" y="60" width="30" height="120" fill="#764ba2" rx="5"/>
+                            <rect x="180" y="40" width="30" height="140" fill="#764ba2" rx="5"/>
+                            <rect x="230" y="20" width="30" height="160" fill="#764ba2" rx="5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section id="reports" class="reports">
+        <div class="container">
+            <div class="section-header">
+                <h2>Custom Reports</h2>
+                <p>Generate detailed reports tailored to your needs</p>
+            </div>
+            <div class="reports-grid">
+                <div class="report-card">
+                    <div class="report-header">
+                        <svg class="report-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                        <h3>Monthly Summary</h3>
+                    </div>
+                    <p>Comprehensive overview of monthly performance metrics and KPIs</p>
+                    <button class="report-button">Generate Report</button>
+                </div>
+                <div class="report-card">
+                    <div class="report-header">
+                        <svg class="report-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"/>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                        <h3>Financial Report</h3>
+                    </div>
+                    <p>Detailed financial analysis including revenue, expenses, and profit margins</p>
+                    <button class="report-button">Generate Report</button>
+                </div>
+                <div class="report-card">
+                    <div class="report-header">
+                        <svg class="report-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                        <h3>User Analytics</h3>
+                    </div>
+                    <p>In-depth analysis of user behavior, engagement, and retention rates</p>
+                    <button class="report-button">Generate Report</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <a href="mailto:hello@graphpage.com" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@graphpage.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+15551234567" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </a>
+                    <a href="https://maps.google.com/?q=123+Data+Drive+Suite+100+Analytics+City" target="_blank" rel="noopener" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Data Drive, Suite 100<br>Analytics City, AC 12345</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Graph Page. All rights reserved. 
+            | Designed by <a href="https://templatemo.com" rel="nofollow noopener" target="_blank">TemplateMo</a></p>
+        </div>
+    </footer>
+
+<script src="js/app.js"></script>
 </body>
 </html>
